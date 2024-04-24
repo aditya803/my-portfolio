@@ -1,26 +1,18 @@
 import React from "react";
 import './works.css'
-import Portfolio1 from '../../assets/portfolio-1.png'
-import Portfolio2 from '../../assets/portfolio-2.png'
-import Portfolio3 from '../../assets/portfolio-3.png'
-import Portfolio4 from '../../assets/portfolio-4.png'
-import Portfolio5 from '../../assets/portfolio-5.png'
-import Portfolio6 from '../../assets/portfolio-6.png'
+import FlappyBird from '../../assets/flappy_bird.png'
+import BrewCrew from '../../assets/brewcrew.png'
+import NewsApp from '../../assets/newsapp.png'
 
 const Works = () => {
   return (
     <section id="works">
         <h2 className="workTitle">My Portfolio</h2>
-        <h2 className="workDesc">Text demo</h2>
         <div className="workImgs">
-            <img src={Portfolio1} alt="" className="workImg" />
-            <img src={Portfolio2} alt="" className="workImg" />
-            <img src={Portfolio3} alt="" className="workImg" />
-            <img src={Portfolio4} alt="" className="workImg" />
-            <img src={Portfolio5} alt="" className="workImg" />
-            <img src={Portfolio6} alt="" className="workImg" />
+            <a id='flappy' href="https://github.com/aditya803/Flappy_Bird" target="_blank"><img src={FlappyBird} alt="" className="workImg" /></a>
+            <a href="https://github.com/aditya803/flutter_firebase" target="_blank"><img src={BrewCrew} alt="" className="workImg" /></a>
+            <a href="https://github.com/aditya803/news_app" target="_blank"><img src={NewsApp} alt="" className="workImg" /></a>
         </div>
-        <button className="workbtn">See More</button>
     </section>
   )
 }

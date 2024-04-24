@@ -1,9 +1,7 @@
 import React, { useRef } from 'react'
 import './Contact.css'
-import FacebookIcon from '../../assets/facebook-icon.png'
-import TwitterIcon from '../../assets/twitter.png'
-import YoutubeIcon from '../../assets/youtube.png'
-import InstagramIcon from '../../assets/instagram.png'
+import LinkedInLogo from '../../assets/LinkedIN_black.png'
+import GithubLogo from '../../assets/Github_black.png'
 import emailjs from '@emailjs/browser';
 
 
@@ -39,10 +37,8 @@ const Contact = () => {
                     <textarea name="message" placeholder='Your Message'  className='msg' rows="5"></textarea>
                     <button className="submitBtn" type='submit' value='Send'>Submit</button>
                     <div className="links">
-                        <img src={FacebookIcon} alt="FacebookIcon" className="link" />
-                        <img src={TwitterIcon} alt="TwitterIcon" className="link" />
-                        <img src={YoutubeIcon} alt="YoutubeIcon" className="link" />
-                        <img src={InstagramIcon} alt="InstagramIcon" className="link" />
+                        <a href="https://www.linkedin.com/in/aditya-pandey-aa8a28193/" target='_blank'><img src={LinkedInLogo} alt="FacebookIcon" className="link"/></a>
+                        <a href="https://github.com/aditya803" target='_blank'><img src={GithubLogo} alt="TwitterIcon" className="link" /></a>
                     </div>
                 </form>
             </div>

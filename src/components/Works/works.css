@@ -28,13 +28,17 @@
     justify-content: center;
     flex-wrap: wrap;
     width: 100vw;
-    max-width: 65rem;
+    max-width: 100rem;    
 }
 
 .workImg{
     object-fit: cover;
     height: 20rem;
     margin: 0.5rem;
+}
+
+#flappy{
+   object-fit:scale-down;
 }
 
 .workbtn{
