@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100vw;
     max-width: 100rem;    
 }
@@ -34,13 +34,16 @@
 .workImg{
     object-fit: cover;
     height: 20rem;
+    max-width: fit-content;
     margin: 0.5rem;
+    width: 20rem;
+    
 }
 
-#flappy{
-   object-fit:scale-down;
-}
-
+/* .workImgs > a {
+    flex-basis: 33.33%;
+  } */
+  
 .workbtn{
     padding: 0.5rem 2.5rem;
     background: white;
@@ -53,5 +56,8 @@
 @media screen and (max-width: 585px) {
     .workImg{
         height: 30vw;
+    }
+    .workImgs{
+        flex-wrap: wrap;
     }
 }
